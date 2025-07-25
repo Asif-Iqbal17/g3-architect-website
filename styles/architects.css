@@ -172,6 +172,23 @@ main>section {
 .sponsor-companies img {
     filter: grayscale(100%);
 }
+/* Features related Styles */
+#features-section-title{
+    border-left: 5px solid #FF900E;
+    padding: 5px;
+}
+.feather-card{
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(255, 255, 255, 1) ;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+.feature-card,.feature-title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    
+}
 
 
 /* responsive media query */
