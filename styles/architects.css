@@ -1,28 +1,33 @@
 .work-sans-font {
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
+
 /* Shared Styles */
-.display-flex{
+.display-flex {
     display: flex;
 }
+
 /* dark 02 */
-.text-gray{
+.text-gray {
     color: #424242;
 }
+
 /* dark-03 */
-.text-light-gray{
+.text-light-gray {
     color: #727272;
 
 }
-.bg-light{
+
+.bg-light {
     background-color: rgba(255, 144, 14, 0.1);
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FF900E;
     color: #FFFFFF;
     border-radius: 8px;
@@ -33,49 +38,117 @@
 
 }
 
+.text-primary {
+    color: #FF900E;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+.section-title {
+    font-size: 2.8rem;
+}
+
+
 /* Header styles */
 
 /* nav styles */
-.navbar{
+.navbar {
     justify-content: space-between;
-   align-items: center;
+    align-items: center;
 }
-.nav-item{
+
+.nav-item {
     list-style-type: none;
     margin-right: 30px;
 }
-.nav-link{
+
+.nav-link {
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
 }
-.navbar,.banner{
+
+.navbar,
+.banner {
     max-width: 1440px;
     margin: 0 auto;
 }
-.brand{
+
+.brand {
     font-size: 3rem;
     font-weight: bold;
 }
+
 /* banner styles */
-.banner-content{
+.banner-content {
     max-width: 850px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 50px;
 
 }
-.banner-title{
+
+.banner-title {
     font-weight: bold;
     font-size: 4rem;
 }
-.banner-image{
+
+.banner-image {
     width: 100%;
 }
+
+/* teams and features related styles */
+.teams {
+    align-items: center;
+
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-feathers {
+    margin-left: 73px;
+    max-width: 530px;
+}
+
+
+#quice-list {
+    font-weight: 500;
+}
+
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navbar,.nav-links{
+
+    .navbar,
+    .nav-links,
+    .teams {
         flex-direction: column;
+    }
+    .team-img-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .our-feathers{
+        margin-left: 20px;
+    }
+
+
+}
+/* medium Size Device */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-feathers{
+        margin-left: 50px;
     }
     
 }
